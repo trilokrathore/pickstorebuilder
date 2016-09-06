@@ -1,0 +1,10 @@
+{
+     "widgets" : [{
+         "id" : "pickupstore#1",
+         "title" : "pickupstore",
+         "settings" : {
+             "viewUrl" : "index.html",
+             "pickServiceUrl" : "https://api.stage.yaas.io/cmryaasteam/pickupstore/v1/"
+         }
+     }]
+}
