@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+ <html>
+ <head lang="en">
+     <meta charset="UTF-8">
+     <!-- custom stylesheets -->
+     <link href="https://builder.yaas.io/public/css/styles.css" rel="stylesheet"/>
+     <script src="https://builder.yaas.io/public/js/vendor/jquery/dist/jquery.min.js"></script>
+     <script src="https://builder.yaas.io/public/js/vendor/angular/angular.js"></script>
+     <script src="https://builder.yaas.io/public/js/vendor/underscore/underscore.js"></script>
+     <script src="https://builder.yaas.io/public/js/vendor/restangular/dist/restangular.js"></script>
+     <script src="https://builder.yaas.io/public/js/builder.js"></script>
+     <script src="https://builder.yaas.io/public/js/builder_editors_v2.js"></script>
+     <script src="controller/registerstorecontroller.js"></script>
+     <title>PickupStores</title>
+ </head>
+ <body>
+ 
+<div class="myForm" ng-App="registerModule">
+     <div class="container-fluid" style="margin-left:10px;">
+         <div class="row" ng-controller="registerstorecontroller">
+             <div class="page-header">
+                 <h1 id="header">Register PickupStore</h1>
+             </div>
+             <div class="row">
+<form name="pickupstoreform" ng-submit="submit()">
+    <label>
+       User name:
+       <input type="text" name="pickupstoreid" ng-model="pickupstoreid">
+    </label>
+     
+    <label>
+       Last name:
+       <input type="text" name="title" ng-model="title"
+       >
+    </label>
+   <input type="submit" id="submit" value="Submit" />
+    
+  </form>
+                 </div>
+             </div>
+         </div>
+</div>
+  
+ </body>
+ </html>

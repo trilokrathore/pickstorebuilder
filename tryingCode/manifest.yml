@@ -1,0 +1,8 @@
+---
+applications:
+- name: tryingCode
+  host: tryingCode
+  buildpack: staticfile_buildpack
+  instances: 1
+  memory: 256M
+  domain: us-east.modules.yaas.io
