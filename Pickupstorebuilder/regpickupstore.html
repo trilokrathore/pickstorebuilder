@@ -11,6 +11,8 @@
      <script src="https://builder.yaas.io/public/js/builder.js"></script>
      <script src="https://builder.yaas.io/public/js/builder_editors_v2.js"></script>
      <script src="controller/registerstorecontroller.js"></script>
+     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+ 
      <title>PickupStores</title>
  </head>
  <body>
@@ -21,25 +23,85 @@
              <div class="page-header">
                  <h1 id="header">Register PickupStore</h1>
              </div>
-             <div class="row">
+             
 <form name="pickupstoreform" ng-submit="submit()">
-    <label>
-       User name:
-       <input type="text" name="pickupstoreid" ng-model="pickupstoreid">
-    </label>
-     
-    <label>
-       Last name:
-       <input type="text" name="title" ng-model="title"
-       >
-    </label>
-   <input type="submit" id="submit" value="Submit" />
+      
+    <div class="row">
+        
+        <div class="col-sm-2">
+            <label>Store Id:</label>
+        </div>
+        <div class="col-sm-4">
+             <input type="text" name="id" ng-model="id">
+        </div>
+        <div class="col-sm-2">
+            <label>Store Name:</label>
+        </div>
+        <div class="col-sm-4">
+            <input type="text" name="name" ng-model="name">
+        </div>
+    
+    </div>
+     <div class="row">
+        <div class="col-sm-2">
+            <label>Latitude </label>
+        </div>
+        <div class="col-sm-4">
+             <input type="text" name="latitude" ng-model="latitude">
+        </div>
+        <div class="col-sm-2">
+            <label>Longitude</label>
+        </div>
+        <div class="col-sm-4">
+            <input type="text" name="longitude" ng-model="longitude">
+        </div>
+    </div>
+    <div class="row">
+        
+        <div class="col-sm-2">
+            <label>Email ID </label>
+        </div>
+        <div class="col-sm-4">
+             <input type="text" name="contactdetials" ng-model="contactdetials">
+        </div>
+        <div class="col-sm-2">
+            <label>Contact Detials</label>
+        </div>
+        <div class="col-sm-4">
+            <input type="text" name="emailId" ng-model="emailId">
+        </div>
+    
+    </div>
+    <div class="row">
+        
+        <div class="col-sm-2">
+            <label>Opening Schedule </label>
+        </div>
+        <div class="col-sm-4">
+             <input type="text" name="openingschedule" ng-model="openingschedule">
+        </div>
+        <div class="col-sm-2">
+            <label>Closing Schedule </label>
+        </div>
+        <div class="col-sm-4">
+            <input type="text" name="closingschedule" ng-model="closingschedule">
+        </div>
+    
+    </div>
+    
+    <div class="row">
+    </div>
+    <div class="row">
+        <div class="col-sm-6">
+       <button type="submit" class="btn btn-default">Register</button>
+        </div>
+    </div>
     
   </form>
-                 </div>
-             </div>
-         </div>
+                
+ </div>
 </div>
+     </div>
   
  </body>
  </html>

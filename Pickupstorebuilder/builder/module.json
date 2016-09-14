@@ -1,18 +1,18 @@
 {
      "widgets" : [{
          "id" : "pickupstore#1",
-         "title" : "pickupstore",
+         "title" : "Pickupstore",
          "settings" : {
              "viewUrl" : "index.html",
-             "pickServiceUrl" : "https://api.stage.yaas.io/cmryaasteam/pickupstore/v1/"
+             "pickServiceUrl" : "https://api.yaas.io/tryaas/pickupstore/v1/"
          }
      },
         {
             "id": "registerpickupstore",
-            "title": "Register Pick Store",
+            "title": "Register PickupStore",
             "settings": {
                 "viewUrl": "regpickupstore.html",
-                "pickServiceUrl": "https://api.stage.yaas.io/cmryaasteam/pickupstore/v1/"
+                "pickServiceUrl": "https://api.yaas.io/tryaas/pickupstore/v1/"
                 
             }
         }         

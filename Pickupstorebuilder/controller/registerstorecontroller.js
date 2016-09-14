@@ -3,17 +3,38 @@ var registerModule = angular.module('registerModule', ['builder', 'builder_edito
 
  registerModule.controller('registerstorecontroller', function ($scope, $http,Restangular, currentAccountId, currentProjectId, notificationManager, linkManager) {
       
-     
-     $scope.submit = function() {
+     //notificationManager.showSuccess("Thank You!");
+         $scope.submit = function() {
          $scope.pickServiceUrl = Builder.currentWidget.settings.pickServiceUrl;
          Restangular.setBaseUrl($scope.pickServiceUrl);
-         console.info($scope.title);
+         
          var pickupstore= {
-             id:$scope.pickupstoreid,
-             title:$scope.title
+             id:$scope.id,
+             name:$scope.name,
+             latitude:$scope.latitude,
+             longitude:$scope.longitude,
+             contactdetials:$scope.contactdetials,
+             emailId:$scope.emailId,
+             openingschedule:$scope.openingschedule,
+             closingschedule:$scope.closingschedule
+             
          };
-         var res=Restangular.all("pickupstores").post(pickupstore);
-         console.info(res)
+         var res=Restangular.all("pickupstores").post(pickupstore).then(function (response) {
+             notificationManager.showSuccess("Thank You! " + "<b>"+$scope.id+"</b>");
+             $scope.clearOldValue();
+         });
+        
+    $scope.clearOldValue=function(){
+        $scope.id='';
+        $scope.name='';
+        $scope.latitude='';
+        $scope.longitude='';
+        $scope.contactdetials='';
+        $scope.emailId='';
+        $scope.openingschedule='';
+        $scope.closingschedule='';
+    }
+              
  }
      
  } );
