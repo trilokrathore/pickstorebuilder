@@ -28,12 +28,10 @@
                              <li class="list-group-item" ng-repeat="pickstore in pickstores">
                                  <span class="badge">{{pickstore.createdAt | date : "mediumDate"}}</span>
                                  <h2 class="ng-binding list-group-item-heading">
-                                     {{pickstore.title}}
                                      <small>(id : {{pickstore.id}})</small>
                                  </h2>
-                                 <h3>{{pickstore.description}}</h3>
-                                 <small>(Items : {{items.length}})</small>
-                                 <p>Owner : {{pickstore.owner}}</p>
+                                 <small>Name : {{pickstore.name}}</small>
+                                 <p>Email : {{pickstore.emailId}}</p>
                              </li>
                          </ul>
                      </div>
