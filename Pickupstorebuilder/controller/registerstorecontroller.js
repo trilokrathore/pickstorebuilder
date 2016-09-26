@@ -16,7 +16,8 @@ var registerModule = angular.module('registerModule', ['builder', 'builder_edito
              contactdetials:$scope.contactdetials,
              emailId:$scope.emailId,
              openingschedule:$scope.openingschedule,
-             closingschedule:$scope.closingschedule
+             closingschedule:$scope.closingschedule,
+             pincode:$scope.pincode
              
          };
          var res=Restangular.all("pickupstores").post(pickupstore).then(function (response) {
@@ -33,6 +34,7 @@ var registerModule = angular.module('registerModule', ['builder', 'builder_edito
         $scope.emailId='';
         $scope.openingschedule='';
         $scope.closingschedule='';
+        $scope.pincode='';
     }
               
  }
